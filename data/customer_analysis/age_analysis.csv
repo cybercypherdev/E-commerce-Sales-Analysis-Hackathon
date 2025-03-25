@@ -1,0 +1,7 @@
+,Total Orders,Total Orders,Total Spent,Total Spent,Average Order Value
+,count,mean,mean,sum,mean
+Age Segment,,,,,
+Under 25,30,1.0,751.33,22540.0,751.33
+25-35,42,1.0,1106.43,46470.0,1106.43
+36-45,52,1.0,1324.23,68860.0,1324.23
+Over 45,168,1.0,1372.86,230640.0,1372.86

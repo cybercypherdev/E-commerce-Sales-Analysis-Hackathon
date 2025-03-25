@@ -1,0 +1,293 @@
+Customer ID,Total Orders,Customer Lifetime (days),Total Spent,Avg Days Between Orders,Orders per Year,Average Order Value,Customer Segment,Purchase Frequency,Days Since Last Purchase,RFM_Score,Gender,Region,Age,Age Segment
+CUST0001,1,0,150.0,0,1,150.0,Low Value,Single Purchase,268,214,Female,East,38.0,36-45
+CUST0002,1,0,500.0,0,1,500.0,Low Value,Single Purchase,350,112,Male,North,23.0,Under 25
+CUST0003,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,58,411,Male,North,63.0,Over 45
+CUST0004,1,0,150.0,0,1,150.0,Low Value,Single Purchase,28,414,Female,West,65.0,Over 45
+CUST0005,1,0,60.0,0,1,60.0,Low Value,Single Purchase,322,114,Female,East,56.0,Over 45
+CUST0006,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,108,311,Male,South,52.0,Over 45
+CUST0007,1,0,200.0,0,1,200.0,Low Value,Single Purchase,67,414,Female,East,52.0,Over 45
+CUST0008,1,0,500.0,0,1,500.0,Low Value,Single Purchase,335,112,Female,North,47.0,Over 45
+CUST0009,1,0,200.0,0,1,200.0,Low Value,Single Purchase,87,314,Male,West,50.0,Over 45
+CUST0010,1,0,300.0,0,1,300.0,Low Value,Single Purchase,282,113,Female,East,37.0,36-45
+CUST0011,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,272,211,Female,West,54.0,Over 45
+CUST0012,1,0,90.0,0,1,90.0,Low Value,Single Purchase,158,314,Male,East,47.0,Over 45
+CUST0013,1,0,200.0,0,1,200.0,Low Value,Single Purchase,143,314,Female,East,55.0,Over 45
+CUST0014,1,0,300.0,0,1,300.0,Low Value,Single Purchase,16,413,Male,South,20.0,Under 25
+CUST0015,1,0,300.0,0,1,300.0,Low Value,Single Purchase,287,113,Male,West,58.0,Over 45
+CUST0016,1,0,800.0,0,1,800.0,Low Value,Single Purchase,358,112,Male,South,61.0,Over 45
+CUST0017,1,0,250.0,0,1,250.0,Low Value,Single Purchase,17,413,Female,West,36.0,36-45
+CUST0018,1,0,60.0,0,1,60.0,Low Value,Single Purchase,36,414,Female,unknown,38.0,36-45
+CUST0019,1,0,50.0,0,1,50.0,Low Value,Single Purchase,255,214,Female,East,69.0,Over 45
+CUST0020,1,0,300.0,0,1,300.0,Low Value,Single Purchase,69,413,Female,North,55.0,Over 45
+CUST0021,1,0,120.0,0,1,120.0,Low Value,Single Purchase,101,314,Male,North,43.0,36-45
+CUST0022,1,0,400.0,0,1,400.0,Low Value,Single Purchase,43,413,Female,North,33.0,25-35
+CUST0023,1,0,300.0,0,1,300.0,Low Value,Single Purchase,255,213,Male,West,29.0,25-35
+CUST0024,1,0,400.0,0,1,400.0,Low Value,Single Purchase,26,413,Female,East,57.0,Over 45
+CUST0025,1,0,300.0,0,1,300.0,Low Value,Single Purchase,39,413,Female,South,56.0,Over 45
+CUST0026,1,0,300.0,0,1,300.0,Low Value,Single Purchase,41,413,Female,East,27.0,25-35
+CUST0027,1,0,250.0,0,1,250.0,Low Value,Single Purchase,211,213,Female,unknown,36.0,36-45
+CUST0028,1,0,1000.0,0,1,1000.0,Low Value,Single Purchase,134,312,Male,unknown,50.0,Over 45
+CUST0029,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,85,311,Female,West,66.0,Over 45
+CUST0030,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,184,211,Female,East,44.0,36-45
+CUST0031,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,73,411,Female,East,67.0,Over 45
+CUST0032,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,288,112,Female,South,63.0,Over 45
+CUST0033,1,0,600.0,0,1,600.0,Low Value,Single Purchase,266,212,Female,South,47.0,Over 45
+CUST0034,1,0,150.0,0,1,150.0,Low Value,Single Purchase,47,414,Female,East,65.0,Over 45
+CUST0035,1,0,120.0,0,1,120.0,Low Value,Single Purchase,165,314,Female,West,20.0,Under 25
+CUST0036,1,0,50.0,0,1,50.0,Low Value,Single Purchase,154,314,Female,North,33.0,25-35
+CUST0037,1,0,200.0,0,1,200.0,Low Value,Single Purchase,228,214,Male,West,51.0,Over 45
+CUST0038,1,0,600.0,0,1,600.0,Low Value,Single Purchase,47,412,Female,East,57.0,Over 45
+CUST0039,1,0,200.0,0,1,200.0,Low Value,Single Purchase,24,414,Male,South,60.0,Over 45
+CUST0040,1,0,250.0,0,1,250.0,Low Value,Single Purchase,154,313,Female,East,47.0,Over 45
+CUST0041,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,148,311,Male,East,64.0,Over 45
+CUST0042,1,0,50.0,0,1,50.0,Low Value,Single Purchase,30,414,Female,South,57.0,Over 45
+CUST0043,1,0,120.0,0,1,120.0,Low Value,Single Purchase,70,414,Female,South,22.0,Under 25
+CUST0044,1,0,150.0,0,1,150.0,Low Value,Single Purchase,67,414,Male,East,30.0,25-35
+CUST0045,1,0,30.0,0,1,30.0,Low Value,Single Purchase,72,414,Male,East,21.0,Under 25
+CUST0046,1,0,200.0,0,1,200.0,Low Value,Single Purchase,269,214,Male,West,22.0,Under 25
+CUST0047,1,0,600.0,0,1,600.0,Low Value,Single Purchase,199,212,Female,West,41.0,36-45
+CUST0048,1,0,600.0,0,1,600.0,Low Value,Single Purchase,102,312,Male,North,34.0,25-35
+CUST0049,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,38,412,Female,West,59.0,Over 45
+CUST0050,1,0,90.0,0,1,90.0,Low Value,Single Purchase,211,214,Male,North,47.0,Over 45
+CUST0051,1,0,800.0,0,1,800.0,Low Value,Single Purchase,0,412,Male,West,41.0,36-45
+CUST0052,1,0,120.0,0,1,120.0,Low Value,Single Purchase,208,214,Male,North,66.0,Over 45
+CUST0053,1,0,200.0,0,1,200.0,Low Value,Single Purchase,142,314,Female,North,25.0,Under 25
+CUST0054,1,0,100.0,0,1,100.0,Low Value,Single Purchase,297,114,Female,North,64.0,Over 45
+CUST0055,1,0,400.0,0,1,400.0,Low Value,Single Purchase,102,313,Female,North,45.0,36-45
+CUST0056,1,0,400.0,0,1,400.0,Low Value,Single Purchase,0,413,Female,South,23.0,Under 25
+CUST0057,1,0,200.0,0,1,200.0,Low Value,Single Purchase,96,314,Male,North,62.0,Over 45
+CUST0058,1,0,600.0,0,1,600.0,Low Value,Single Purchase,150,312,Female,East,42.0,36-45
+CUST0059,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,195,211,Male,North,18.0,Under 25
+CUST0060,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,354,111,Male,North,41.0,36-45
+CUST0061,1,0,800.0,0,1,800.0,Low Value,Single Purchase,241,212,Female,South,35.0,25-35
+CUST0062,1,0,400.0,0,1,400.0,Low Value,Single Purchase,254,213,Male,West,43.0,36-45
+CUST0063,1,0,50.0,0,1,50.0,Low Value,Single Purchase,143,314,Male,South,20.0,Under 25
+CUST0064,1,0,300.0,0,1,300.0,Low Value,Single Purchase,110,313,Male,West,61.0,Over 45
+CUST0065,1,0,200.0,0,1,200.0,Low Value,Single Purchase,332,114,Female,East,47.0,Over 45
+CUST0066,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,350,111,Male,West,37.0,36-45
+CUST0067,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,56,411,Female,North,19.0,Under 25
+CUST0068,1,0,600.0,0,1,600.0,Low Value,Single Purchase,271,212,Male,East,64.0,Over 45
+CUST0069,1,0,300.0,0,1,300.0,Low Value,Single Purchase,27,413,Male,East,47.0,Over 45
+CUST0070,1,0,900.0,0,1,900.0,Low Value,Single Purchase,262,212,Male,West,23.0,Under 25
+CUST0071,1,0,120.0,0,1,120.0,Low Value,Single Purchase,267,214,Female,North,46.0,Over 45
+CUST0072,1,0,100.0,0,1,100.0,Low Value,Single Purchase,123,314,Male,South,21.0,Under 25
+CUST0073,1,0,200.0,0,1,200.0,Low Value,Single Purchase,323,114,Male,East,19.0,Under 25
+CUST0074,1,0,400.0,0,1,400.0,Low Value,Single Purchase,128,313,Male,North,36.0,36-45
+CUST0075,1,0,600.0,0,1,600.0,Low Value,Single Purchase,140,312,Female,South,56.0,Over 45
+CUST0076,1,0,500.0,0,1,500.0,Low Value,Single Purchase,71,412,Male,East,26.0,25-35
+CUST0077,1,0,250.0,0,1,250.0,Low Value,Single Purchase,290,113,Male,South,50.0,Over 45
+CUST0078,1,0,4500.0,0,1,4500.0,Medium Value,Single Purchase,238,211,Female,North,38.0,36-45
+CUST0079,1,0,100.0,0,1,100.0,Low Value,Single Purchase,204,214,Male,South,26.0,25-35
+CUST0080,1,0,100.0,0,1,100.0,Low Value,Single Purchase,221,214,Female,East,51.0,Over 45
+CUST0081,1,0,300.0,0,1,300.0,Low Value,Single Purchase,143,313,Male,North,38.0,36-45
+CUST0082,1,0,200.0,0,1,200.0,Low Value,Single Purchase,257,214,Female,unknown,47.0,Over 45
+CUST0083,1,0,300.0,0,1,300.0,Low Value,Single Purchase,0,413,Male,East,28.0,25-35
+CUST0085,1,0,800.0,0,1,800.0,Low Value,Single Purchase,39,412,Male,unknown,47.0,Over 45
+CUST0086,1,0,1000.0,0,1,1000.0,Low Value,Single Purchase,184,212,Male,West,26.0,25-35
+CUST0087,1,0,60.0,0,1,60.0,Low Value,Single Purchase,332,114,Female,unknown,49.0,Over 45
+CUST0088,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,331,112,Female,South,66.0,Over 45
+CUST0089,1,0,90.0,0,1,90.0,Low Value,Single Purchase,106,314,Female,North,27.0,25-35
+CUST0090,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,204,211,Male,West,61.0,Over 45
+CUST0091,1,0,30.0,0,1,30.0,Low Value,Single Purchase,259,214,Female,South,30.0,25-35
+CUST0092,1,0,2400.0,0,1,2400.0,Medium Value,Single Purchase,97,311,Female,East,32.0,25-35
+CUST0093,1,0,300.0,0,1,300.0,Low Value,Single Purchase,310,113,Male,North,66.0,Over 45
+CUST0094,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,260,212,Male,North,30.0,25-35
+CUST0095,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,199,211,Female,East,47.0,Over 45
+CUST0096,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,330,111,Female,unknown,61.0,Over 45
+CUST0097,1,0,200.0,0,1,200.0,Low Value,Single Purchase,227,214,Female,East,34.0,25-35
+CUST0098,1,0,400.0,0,1,400.0,Low Value,Single Purchase,309,113,Female,East,57.0,Over 45
+CUST0099,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,144,311,Female,South,26.0,25-35
+CUST0100,1,0,100.0,0,1,100.0,Low Value,Single Purchase,264,214,Male,West,29.0,25-35
+CUST0101,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,278,112,Female,North,53.0,Over 45
+CUST0102,1,0,900.0,0,1,900.0,Low Value,Single Purchase,74,412,Male,West,25.0,Under 25
+CUST0103,1,0,800.0,0,1,800.0,Low Value,Single Purchase,65,412,Male,North,47.0,Over 45
+CUST0104,1,0,200.0,0,1,200.0,Low Value,Single Purchase,200,214,Female,East,40.0,36-45
+CUST0105,1,0,1000.0,0,1,1000.0,Low Value,Single Purchase,173,312,Male,East,27.0,25-35
+CUST0106,1,0,150.0,0,1,150.0,Low Value,Single Purchase,187,214,Female,East,47.0,Over 45
+CUST0107,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,206,211,Male,West,67.0,Over 45
+CUST0108,1,0,100.0,0,1,100.0,Low Value,Single Purchase,76,414,Male,South,47.0,Over 45
+CUST0109,1,0,30.0,0,1,30.0,Low Value,Single Purchase,297,114,Female,unknown,57.0,Over 45
+CUST0111,1,0,900.0,0,1,900.0,Low Value,Single Purchase,232,212,Female,West,19.0,Under 25
+CUST0112,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,266,212,Male,North,33.0,25-35
+CUST0113,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,111,311,Male,South,38.0,36-45
+CUST0114,1,0,900.0,0,1,900.0,Low Value,Single Purchase,166,312,Female,West,60.0,Over 45
+CUST0115,1,0,500.0,0,1,500.0,Low Value,Single Purchase,165,312,Male,South,53.0,Over 45
+CUST0116,1,0,200.0,0,1,200.0,Low Value,Single Purchase,345,114,Female,East,47.0,Over 45
+CUST0117,1,0,150.0,0,1,150.0,Low Value,Single Purchase,343,114,Male,North,22.0,Under 25
+CUST0118,1,0,600.0,0,1,600.0,Low Value,Single Purchase,164,312,Male,West,47.0,Over 45
+CUST0120,1,0,400.0,0,1,400.0,Low Value,Single Purchase,164,313,Female,North,35.0,25-35
+CUST0121,1,0,1000.0,0,1,1000.0,Low Value,Single Purchase,106,312,Female,West,66.0,Over 45
+CUST0122,1,0,200.0,0,1,200.0,Low Value,Single Purchase,21,414,Male,West,68.0,Over 45
+CUST0123,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,42,411,Male,South,52.0,Over 45
+CUST0124,1,0,600.0,0,1,600.0,Low Value,Single Purchase,120,312,Female,South,53.0,Over 45
+CUST0125,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,342,111,Female,South,46.0,Over 45
+CUST0126,1,0,60.0,0,1,60.0,Low Value,Single Purchase,79,314,Female,South,66.0,Over 45
+CUST0127,1,0,400.0,0,1,400.0,Low Value,Single Purchase,125,313,Male,North,62.0,Over 45
+CUST0128,1,0,900.0,0,1,900.0,Low Value,Single Purchase,70,412,Female,North,52.0,Over 45
+CUST0129,1,0,60.0,0,1,60.0,Low Value,Single Purchase,241,214,Male,South,66.0,Over 45
+CUST0130,1,0,600.0,0,1,600.0,Low Value,Single Purchase,11,412,Male,East,68.0,Over 45
+CUST0131,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,124,311,Female,West,67.0,Over 45
+CUST0133,1,0,800.0,0,1,800.0,Low Value,Single Purchase,67,412,Female,North,47.0,Over 45
+CUST0134,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,151,312,Male,North,47.0,Over 45
+CUST0135,1,0,200.0,0,1,200.0,Low Value,Single Purchase,211,214,Male,West,41.0,36-45
+CUST0136,1,0,150.0,0,1,150.0,Low Value,Single Purchase,78,314,Female,South,36.0,36-45
+CUST0137,1,0,2400.0,0,1,2400.0,Medium Value,Single Purchase,228,211,Male,North,19.0,Under 25
+CUST0138,1,0,150.0,0,1,150.0,Low Value,Single Purchase,293,114,Male,North,46.0,Over 45
+CUST0139,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,235,211,Male,North,57.0,Over 45
+CUST0140,1,0,200.0,0,1,200.0,Low Value,Single Purchase,301,114,Male,East,47.0,Over 45
+CUST0141,1,0,30.0,0,1,30.0,Low Value,Single Purchase,92,314,Female,East,58.0,Over 45
+CUST0142,1,0,300.0,0,1,300.0,Low Value,Single Purchase,264,213,Male,East,32.0,25-35
+CUST0143,1,0,600.0,0,1,600.0,Low Value,Single Purchase,173,312,Female,unknown,36.0,36-45
+CUST0144,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,33,411,Female,South,47.0,Over 45
+CUST0145,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,85,312,Male,East,51.0,Over 45
+CUST0146,1,0,800.0,0,1,800.0,Low Value,Single Purchase,355,112,Male,North,47.0,Over 45
+CUST0147,1,0,400.0,0,1,400.0,Low Value,Single Purchase,357,113,Male,North,64.0,Over 45
+CUST0148,1,0,200.0,0,1,200.0,Low Value,Single Purchase,216,214,Female,West,67.0,Over 45
+CUST0149,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,228,212,Male,South,40.0,36-45
+CUST0150,1,0,4500.0,0,1,4500.0,Medium Value,Single Purchase,242,211,Female,North,63.0,Over 45
+CUST0152,1,0,2400.0,0,1,2400.0,Medium Value,Single Purchase,284,111,Male,South,69.0,Over 45
+CUST0153,1,0,300.0,0,1,300.0,Low Value,Single Purchase,196,213,Female,East,40.0,36-45
+CUST0154,1,0,800.0,0,1,800.0,Low Value,Single Purchase,27,412,Female,East,31.0,25-35
+CUST0155,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,335,111,Female,North,41.0,36-45
+CUST0156,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,5,411,Female,South,57.0,Over 45
+CUST0157,1,0,200.0,0,1,200.0,Low Value,Single Purchase,226,214,Female,East,48.0,Over 45
+CUST0158,1,0,800.0,0,1,800.0,Low Value,Single Purchase,92,312,Male,West,51.0,Over 45
+CUST0159,1,0,100.0,0,1,100.0,Low Value,Single Purchase,202,214,Female,South,18.0,Under 25
+CUST0160,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,65,411,Female,South,69.0,Over 45
+CUST0161,1,0,600.0,0,1,600.0,Low Value,Single Purchase,365,112,Male,West,62.0,Over 45
+CUST0162,1,0,100.0,0,1,100.0,Low Value,Single Purchase,222,214,Male,East,69.0,Over 45
+CUST0163,1,0,300.0,0,1,300.0,Low Value,Single Purchase,83,313,Female,North,22.0,Under 25
+CUST0164,1,0,900.0,0,1,900.0,Low Value,Single Purchase,293,112,Male,South,50.0,Over 45
+CUST0165,1,0,200.0,0,1,200.0,Low Value,Single Purchase,9,414,Female,West,49.0,Over 45
+CUST0166,1,0,120.0,0,1,120.0,Low Value,Single Purchase,45,414,Female,West,29.0,25-35
+CUST0167,1,0,200.0,0,1,200.0,Low Value,Single Purchase,20,414,Female,North,67.0,Over 45
+CUST0168,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,282,112,Female,East,42.0,36-45
+CUST0169,1,0,300.0,0,1,300.0,Low Value,Single Purchase,128,313,Female,South,54.0,Over 45
+CUST0170,1,0,150.0,0,1,150.0,Low Value,Single Purchase,12,414,Female,South,40.0,36-45
+CUST0171,1,0,500.0,0,1,500.0,Low Value,Single Purchase,354,112,Male,East,21.0,Under 25
+CUST0172,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,167,312,Female,South,56.0,Over 45
+CUST0173,1,0,4500.0,0,1,4500.0,Medium Value,Single Purchase,349,111,Female,South,47.0,Over 45
+CUST0174,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,241,212,Female,East,68.0,Over 45
+CUST0176,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,48,411,Male,South,51.0,Over 45
+CUST0177,1,0,600.0,0,1,600.0,Low Value,Single Purchase,291,112,Male,South,29.0,25-35
+CUST0178,1,0,600.0,0,1,600.0,Low Value,Single Purchase,67,412,Male,West,44.0,36-45
+CUST0179,1,0,100.0,0,1,100.0,Low Value,Single Purchase,293,114,Male,North,45.0,36-45
+CUST0180,1,0,900.0,0,1,900.0,Low Value,Single Purchase,77,312,Male,East,68.0,Over 45
+CUST0181,1,0,600.0,0,1,600.0,Low Value,Single Purchase,329,112,Male,East,59.0,Over 45
+CUST0182,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,71,412,Male,West,47.0,Over 45
+CUST0183,1,0,2400.0,0,1,2400.0,Medium Value,Single Purchase,74,411,Female,West,42.0,36-45
+CUST0184,1,0,90.0,0,1,90.0,Low Value,Single Purchase,202,214,Female,West,54.0,Over 45
+CUST0185,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,65,411,Male,North,29.0,25-35
+CUST0186,1,0,150.0,0,1,150.0,Low Value,Single Purchase,241,214,Female,West,55.0,Over 45
+CUST0187,1,0,200.0,0,1,200.0,Low Value,Single Purchase,71,414,Female,East,25.0,Under 25
+CUST0188,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,313,111,Male,North,29.0,25-35
+CUST0189,1,0,30.0,0,1,30.0,Low Value,Single Purchase,315,114,Female,South,38.0,36-45
+CUST0190,1,0,200.0,0,1,200.0,Low Value,Single Purchase,189,214,Male,North,28.0,25-35
+CUST0191,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,155,311,Female,unknown,41.0,36-45
+CUST0192,1,0,800.0,0,1,800.0,Low Value,Single Purchase,52,412,Female,North,58.0,Over 45
+CUST0193,1,0,200.0,0,1,200.0,Low Value,Single Purchase,58,414,Male,South,64.0,Over 45
+CUST0194,1,0,30.0,0,1,30.0,Low Value,Single Purchase,340,114,Female,West,61.0,Over 45
+CUST0195,1,0,150.0,0,1,150.0,Low Value,Single Purchase,360,114,Male,West,48.0,Over 45
+CUST0196,1,0,90.0,0,1,90.0,Low Value,Single Purchase,7,414,Female,South,37.0,36-45
+CUST0197,1,0,60.0,0,1,60.0,Low Value,Single Purchase,213,214,Female,West,54.0,Over 45
+CUST0198,1,0,900.0,0,1,900.0,Low Value,Single Purchase,4,412,Male,South,47.0,Over 45
+CUST0199,1,0,250.0,0,1,250.0,Low Value,Single Purchase,320,113,Female,West,41.0,36-45
+CUST0200,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,357,111,Female,West,47.0,Over 45
+CUST0201,1,0,200.0,0,1,200.0,Low Value,Single Purchase,216,214,Female,East,49.0,Over 45
+CUST0202,1,0,90.0,0,1,90.0,Low Value,Single Purchase,363,114,Male,South,56.0,Over 45
+CUST0203,1,0,30.0,0,1,30.0,Low Value,Single Purchase,365,114,Male,South,33.0,25-35
+CUST0204,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,293,111,Male,North,54.0,Over 45
+CUST0205,1,0,600.0,0,1,600.0,Low Value,Single Purchase,230,212,Female,South,43.0,36-45
+CUST0206,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,245,211,Male,South,43.0,36-45
+CUST0207,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,295,112,Male,South,54.0,Over 45
+CUST0208,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,336,112,Female,West,57.0,Over 45
+CUST0209,1,0,250.0,0,1,250.0,Low Value,Single Purchase,325,113,Male,North,63.0,Over 45
+CUST0210,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,208,211,Male,South,30.0,25-35
+CUST0211,1,0,90.0,0,1,90.0,Low Value,Single Purchase,9,414,Female,South,35.0,25-35
+CUST0212,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,46,411,Female,North,47.0,Over 45
+CUST0213,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,366,112,Female,North,45.0,36-45
+CUST0214,1,0,600.0,0,1,600.0,Low Value,Single Purchase,93,312,Female,South,45.0,36-45
+CUST0215,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,346,112,Female,North,35.0,25-35
+CUST0216,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,168,311,Male,South,53.0,Over 45
+CUST0217,1,0,90.0,0,1,90.0,Low Value,Single Purchase,75,414,Male,South,18.0,Under 25
+CUST0218,1,0,200.0,0,1,200.0,Low Value,Single Purchase,61,414,Male,East,36.0,36-45
+CUST0219,1,0,60.0,0,1,60.0,Low Value,Single Purchase,136,314,Male,unknown,48.0,Over 45
+CUST0220,1,0,500.0,0,1,500.0,Low Value,Single Purchase,294,112,Male,North,67.0,Over 45
+CUST0221,1,0,60.0,0,1,60.0,Low Value,Single Purchase,74,414,Female,South,33.0,25-35
+CUST0222,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,92,311,Female,unknown,61.0,Over 45
+CUST0223,1,0,60.0,0,1,60.0,Low Value,Single Purchase,222,214,Female,unknown,20.0,Under 25
+CUST0224,1,0,800.0,0,1,800.0,Low Value,Single Purchase,44,412,Female,East,57.0,Over 45
+CUST0225,1,0,200.0,0,1,200.0,Low Value,Single Purchase,318,114,Female,North,47.0,Over 45
+CUST0226,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,203,211,Female,West,47.0,Over 45
+CUST0227,1,0,200.0,0,1,200.0,Low Value,Single Purchase,90,314,Female,West,54.0,Over 45
+CUST0228,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,344,111,Male,North,25.0,Under 25
+CUST0229,1,0,300.0,0,1,300.0,Low Value,Single Purchase,109,313,Male,West,45.0,36-45
+CUST0230,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,54,411,Male,South,47.0,Over 45
+CUST0231,1,0,100.0,0,1,100.0,Low Value,Single Purchase,174,314,Male,South,47.0,Over 45
+CUST0232,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,57,411,Female,unknown,44.0,36-45
+CUST0233,1,0,600.0,0,1,600.0,Low Value,Single Purchase,298,112,Male,West,24.0,Under 25
+CUST0234,1,0,200.0,0,1,200.0,Low Value,Single Purchase,179,214,Female,South,44.0,36-45
+CUST0235,1,0,500.0,0,1,500.0,Low Value,Single Purchase,270,212,Male,East,19.0,Under 25
+CUST0236,1,0,100.0,0,1,100.0,Low Value,Single Purchase,285,114,Male,East,18.0,Under 25
+CUST0237,1,0,600.0,0,1,600.0,Low Value,Single Purchase,0,412,Male,South,65.0,Over 45
+CUST0238,1,0,200.0,0,1,200.0,Low Value,Single Purchase,344,114,Male,West,26.0,25-35
+CUST0239,1,0,200.0,0,1,200.0,Low Value,Single Purchase,46,414,Male,North,35.0,25-35
+CUST0240,1,0,200.0,0,1,200.0,Low Value,Single Purchase,13,414,Male,East,39.0,36-45
+CUST0241,1,0,50.0,0,1,50.0,Low Value,Single Purchase,177,314,Female,East,27.0,25-35
+CUST0242,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,4,411,Male,North,58.0,Over 45
+CUST0243,1,0,500.0,0,1,500.0,Low Value,Single Purchase,143,312,Female,West,58.0,Over 45
+CUST0244,1,0,300.0,0,1,300.0,Low Value,Single Purchase,316,113,Female,West,24.0,Under 25
+CUST0245,1,0,30.0,0,1,30.0,Low Value,Single Purchase,114,314,Male,North,63.0,Over 45
+CUST0246,1,0,900.0,0,1,900.0,Low Value,Single Purchase,96,312,Female,South,64.0,Over 45
+CUST0247,1,0,200.0,0,1,200.0,Low Value,Single Purchase,239,214,Male,East,44.0,36-45
+CUST0248,1,0,300.0,0,1,300.0,Low Value,Single Purchase,129,313,Male,East,67.0,Over 45
+CUST0249,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,352,112,Male,South,33.0,25-35
+CUST0250,1,0,400.0,0,1,400.0,Low Value,Single Purchase,36,413,Female,West,64.0,Over 45
+CUST0251,1,0,60.0,0,1,60.0,Low Value,Single Purchase,335,114,Male,North,42.0,36-45
+CUST0252,1,0,500.0,0,1,500.0,Low Value,Single Purchase,232,212,Male,West,55.0,Over 45
+CUST0253,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,309,112,Female,West,51.0,Over 45
+CUST0254,1,0,60.0,0,1,60.0,Low Value,Single Purchase,9,414,Female,West,47.0,Over 45
+CUST0255,1,0,2400.0,0,1,2400.0,Medium Value,Single Purchase,319,111,Male,West,47.0,Over 45
+CUST0256,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,141,312,Male,East,69.0,Over 45
+CUST0257,1,0,60.0,0,1,60.0,Low Value,Single Purchase,357,114,Female,unknown,54.0,Over 45
+CUST0258,1,0,1200.0,0,1,1200.0,Medium Value,Single Purchase,232,212,Female,South,39.0,36-45
+CUST0259,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,134,311,Male,West,59.0,Over 45
+CUST0260,1,0,600.0,0,1,600.0,Low Value,Single Purchase,173,312,Male,East,32.0,25-35
+CUST0261,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,94,311,Male,West,48.0,Over 45
+CUST0262,1,0,200.0,0,1,200.0,Low Value,Single Purchase,72,414,Male,East,27.0,25-35
+CUST0263,1,0,200.0,0,1,200.0,Low Value,Single Purchase,270,214,Female,West,40.0,36-45
+CUST0264,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,336,111,Male,East,59.0,Over 45
+CUST0265,1,0,200.0,0,1,200.0,Low Value,Single Purchase,219,214,Female,North,38.0,36-45
+CUST0266,1,0,150.0,0,1,150.0,Low Value,Single Purchase,56,414,Male,North,47.0,Over 45
+CUST0267,1,0,4500.0,0,1,4500.0,Medium Value,Single Purchase,216,211,Male,North,29.0,25-35
+CUST0268,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,26,412,Male,North,47.0,Over 45
+CUST0269,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,31,411,Female,East,64.0,Over 45
+CUST0270,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,173,312,Female,West,64.0,Over 45
+CUST0271,1,0,200.0,0,1,200.0,Low Value,Single Purchase,197,214,Female,South,46.0,Over 45
+CUST0272,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,235,211,Female,West,52.0,Over 45
+CUST0273,1,0,3000.0,0,1,3000.0,Medium Value,Single Purchase,210,211,Female,South,47.0,Over 45
+CUST0274,1,0,150.0,0,1,150.0,Low Value,Single Purchase,0,414,Female,West,51.0,Over 45
+CUST0276,1,0,30.0,0,1,30.0,Low Value,Single Purchase,188,214,Male,West,66.0,Over 45
+CUST0278,1,0,600.0,0,1,600.0,Low Value,Single Purchase,339,112,Female,East,52.0,Over 45
+CUST0279,1,0,30.0,0,1,30.0,Low Value,Single Purchase,322,114,Female,North,59.0,Over 45
+CUST0280,1,0,200.0,0,1,200.0,Low Value,Single Purchase,287,114,Female,East,44.0,36-45
+CUST0281,1,0,200.0,0,1,200.0,Low Value,Single Purchase,129,314,Male,West,44.0,36-45
+CUST0282,1,0,1600.0,0,1,1600.0,Medium Value,Single Purchase,325,111,Male,North,47.0,Over 45
+CUST0283,1,0,90.0,0,1,90.0,Low Value,Single Purchase,112,314,Female,West,67.0,Over 45
+CUST0284,1,0,300.0,0,1,300.0,Low Value,Single Purchase,155,313,Female,West,64.0,Over 45
+CUST0285,1,0,100.0,0,1,100.0,Low Value,Single Purchase,354,114,Female,North,58.0,Over 45
+CUST0286,1,0,1500.0,0,1,1500.0,Medium Value,Single Purchase,301,112,Female,North,63.0,Over 45
+CUST0287,1,0,3200.0,0,1,3200.0,Medium Value,Single Purchase,188,211,Female,South,60.0,Over 45
+CUST0288,1,0,6000.0,0,1,6000.0,High Value,Single Purchase,343,111,Female,South,47.0,Over 45
+CUST0289,1,0,7500.0,0,1,7500.0,High Value,Single Purchase,181,211,Male,West,37.0,36-45
+CUST0290,1,0,300.0,0,1,300.0,Low Value,Single Purchase,95,313,Female,unknown,37.0,36-45
+CUST0291,1,0,800.0,0,1,800.0,Low Value,Single Purchase,291,112,Male,West,49.0,Over 45
+CUST0292,1,0,120.0,0,1,120.0,Low Value,Single Purchase,224,214,Male,South,21.0,Under 25
+CUST0293,1,0,1000.0,0,1,1000.0,Low Value,Single Purchase,196,212,Female,East,32.0,25-35
+CUST0294,1,0,150.0,0,1,150.0,Low Value,Single Purchase,114,314,Female,East,49.0,Over 45
+CUST0295,1,0,4000.0,0,1,4000.0,Medium Value,Single Purchase,3,411,Female,East,26.0,25-35
+CUST0296,1,0,100.0,0,1,100.0,Low Value,Single Purchase,162,314,Female,North,50.0,Over 45
+CUST0297,1,0,600.0,0,1,600.0,Low Value,Single Purchase,85,312,Male,North,61.0,Over 45
+CUST0298,1,0,500.0,0,1,500.0,Low Value,Single Purchase,108,312,Female,South,58.0,Over 45
+CUST0299,1,0,100.0,0,1,100.0,Low Value,Single Purchase,126,314,Male,East,58.0,Over 45
+CUST0300,1,0,90.0,0,1,90.0,Low Value,Single Purchase,351,114,Female,East,47.0,Over 45

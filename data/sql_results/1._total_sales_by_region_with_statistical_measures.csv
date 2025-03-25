@@ -1,0 +1,7 @@
+region,total_orders,total_sales,average_order_value,min_order_value,max_order_value,revenue_percentage,unique_customers
+South,69,99420.0,1440.8695652173913,30.0,7500.0,26.98,69
+North,69,97210.0,1408.840579710145,30.0,7500.0,26.38,69
+West,69,92400.0,1339.1304347826087,30.0,7500.0,25.07,69
+East,69,57700.0,836.231884057971,30.0,7500.0,15.66,69
+unknown,16,21780.0,1361.25,30.0,7500.0,5.91,16
+,1710,,,,,,0

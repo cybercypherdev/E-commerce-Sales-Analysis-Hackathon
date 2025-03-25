@@ -1,0 +1,8 @@
+,Total Orders,Total Orders,Total Spent,Total Spent,Average Order Value
+,count,mean,mean,sum,mean
+Region,,,,,
+East,69,1.0,836.23,57700.0,836.23
+North,69,1.0,1408.84,97210.0,1408.84
+South,69,1.0,1440.87,99420.0,1440.87
+West,69,1.0,1339.13,92400.0,1339.13
+unknown,16,1.0,1361.25,21780.0,1361.25

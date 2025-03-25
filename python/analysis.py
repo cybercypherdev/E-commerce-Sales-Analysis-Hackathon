@@ -3,135 +3,171 @@
 
 # Import required libraries
 import pandas as pd
-import numpy as np
+import sqlite3
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime
 from pathlib import Path
+import numpy as np
+from scipy import stats
 import os
 
-def load_data(data_path):
-    """Load and display basic information about the dataset"""
-    print(f"Loading data from: {data_path}")
-    df = pd.read_csv(data_path)
-    
-    # Standardize column names
-    df.columns = df.columns.str.lower().str.replace(' ', '_')
-    
-    print("\nDataset Info:")
-    print(df.info())
-    print("\nFirst few rows:")
-    print(df.head())
-    return df
+def load_data():
+    """Load data from SQLite database"""
+    project_root = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    db_path = project_root / 'data' / 'db' / 'ecommerce.db'
+    conn = sqlite3.connect(db_path)
+    return pd.read_sql('SELECT * FROM orders', conn)
 
-def analyze_sales_by_region(df, output_dir):
-    """Analyze and visualize total sales by region"""
+def create_output_dirs():
+    """Create output directories if they don't exist"""
+    project_root = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    (project_root / 'data' / 'python_results').mkdir(parents=True, exist_ok=True)
+    return project_root
+
+def save_plot(plt, filename, project_root):
+    """Save plot to output directory"""
+    plt.savefig(project_root / 'data' / 'python_results' / filename)
+    plt.close()
+
+def analyze_sales_patterns(df, project_root):
+    """Analyze and visualize sales patterns"""
+    print("\nAnalyzing sales patterns...")
+    
+    # 1. Sales by Region with Statistical Tests
     plt.figure(figsize=(12, 6))
-    region_sales = df.groupby('region')['total_price'].sum().sort_values(ascending=False)
-    sns.barplot(x=region_sales.index, y=region_sales.values)
-    plt.title('Total Sales by Region')
+    region_sales = df.groupby('region')['total_price'].agg(['sum', 'mean', 'count']).reset_index()
+    
+    # Perform ANOVA test
+    regions = df.groupby('region')['total_price'].apply(list)
+    f_stat, p_value = stats.f_oneway(*regions)
+    
+    sns.barplot(data=region_sales, x='region', y='sum')
+    plt.title(f'Sales by Region\nANOVA Test: p-value = {p_value:.4f}')
     plt.xlabel('Region')
-    plt.ylabel('Total Sales ($)')
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.savefig(output_dir / 'sales_by_region.png')
-    plt.close()
-
-def analyze_category_revenue(df, output_dir):
-    """Analyze and visualize revenue by product category"""
-    plt.figure(figsize=(12, 6))
-    category_revenue = df.groupby('category')['total_price'].sum().sort_values(ascending=False)
-    plt.pie(category_revenue.values, labels=category_revenue.index, autopct='%1.1f%%')
-    plt.title('Revenue Distribution by Product Category')
-    plt.axis('equal')
-    plt.savefig(output_dir / 'category_revenue.png')
-    plt.close()
-
-def analyze_customer_age(df, output_dir):
-    """Analyze and visualize customer age impact on purchasing behavior"""
-    plt.figure(figsize=(12, 6))
-    sns.scatterplot(data=df, x='age', y='total_price')
-    plt.title('Customer Age vs. Total Purchase Amount')
-    plt.xlabel('Age')
-    plt.ylabel('Total Price ($)')
-    plt.savefig(output_dir / 'age_purchase_correlation.png')
-    plt.close()
-
-def analyze_gender_category(df, output_dir):
-    """Analyze and visualize popular products by gender"""
-    plt.figure(figsize=(12, 6))
-    gender_category = df.groupby(['gender', 'category'])['total_price'].sum().unstack()
-    gender_category.plot(kind='bar', stacked=True)
-    plt.title('Product Category Revenue by Gender')
-    plt.xlabel('Gender')
-    plt.ylabel('Total Revenue ($)')
-    plt.legend(title='Category', bbox_to_anchor=(1.05, 1), loc='upper left')
-    plt.tight_layout()
-    plt.savefig(output_dir / 'gender_category_revenue.png')
-    plt.close()
-
-def analyze_shipping_status(df, output_dir):
-    """Analyze and visualize shipping status distribution"""
-    plt.figure(figsize=(10, 6))
-    shipping_status = df['shipping_status'].value_counts()
-    plt.pie(shipping_status.values, labels=shipping_status.index, autopct='%1.1f%%')
-    plt.title('Order Fulfillment Status Distribution')
-    plt.axis('equal')
-    plt.savefig(output_dir / 'shipping_status_distribution.png')
-    plt.close()
-
-def analyze_shipping_trends(df, output_dir):
-    """Analyze and visualize shipping status trends over time"""
-    df['order_date'] = pd.to_datetime(df['order_date'])
-    monthly_status = df.groupby([df['order_date'].dt.to_period('M'), 'shipping_status']).size().unstack()
+    plt.ylabel('Total Sales')
+    save_plot(plt, 'sales_by_region.png', project_root)
     
-    plt.figure(figsize=(15, 6))
-    monthly_status.plot(kind='line', marker='o')
-    plt.title('Shipping Status Trends Over Time')
-    plt.xlabel('Month')
-    plt.ylabel('Number of Orders')
-    plt.legend(title='Shipping Status', bbox_to_anchor=(1.05, 1), loc='upper left')
+    # Save statistical summary
+    stats_summary = region_sales.to_csv(project_root / 'data' / 'python_results' / 'region_sales_stats.csv')
+
+def analyze_category_performance(df, project_root):
+    """Analyze and visualize category performance"""
+    print("Analyzing category performance...")
+    
+    # 1. Category Revenue Analysis
+    plt.figure(figsize=(12, 6))
+    category_sales = df.groupby('category').agg({
+        'total_price': ['sum', 'mean', 'count'],
+        'customer_id': 'nunique'
+    }).reset_index()
+    
+    # Calculate market share
+    category_sales['market_share'] = category_sales[('total_price', 'sum')] / category_sales[('total_price', 'sum')].sum() * 100
+    
+    # Visualization
+    sns.barplot(data=category_sales, x='category', y=('total_price', 'sum'))
+    plt.title('Revenue by Category')
+    plt.xlabel('Category')
+    plt.ylabel('Total Revenue')
+    plt.xticks(rotation=45)
+    save_plot(plt, 'category_revenue.png', project_root)
+    
+    # Save detailed analysis
+    category_sales.to_csv(project_root / 'data' / 'python_results' / 'category_performance.csv')
+
+def analyze_customer_behavior(df, project_root):
+    """Analyze and visualize customer behavior"""
+    print("Analyzing customer behavior...")
+    
+    # 1. Age-Purchase Correlation
+    plt.figure(figsize=(10, 6))
+    sns.regplot(data=df, x='age', y='total_price')
+    correlation = df['age'].corr(df['total_price'])
+    plt.title(f'Age vs Purchase Amount\nCorrelation: {correlation:.2f}')
+    plt.xlabel('Customer Age')
+    plt.ylabel('Purchase Amount')
+    save_plot(plt, 'age_purchase_correlation.png', project_root)
+    
+    # 2. Gender Category Analysis
+    plt.figure(figsize=(12, 6))
+    gender_cat = df.groupby(['gender', 'category'])['total_price'].sum().unstack()
+    gender_cat.plot(kind='bar', stacked=True)
+    plt.title('Revenue by Gender and Category')
+    plt.xlabel('Gender')
+    plt.ylabel('Total Revenue')
+    plt.legend(title='Category', bbox_to_anchor=(1.05, 1))
     plt.tight_layout()
-    plt.savefig(output_dir / 'shipping_trends.png')
-    plt.close()
+    save_plot(plt, 'gender_category_revenue.png', project_root)
+    
+    # Save customer behavior metrics
+    customer_metrics = df.groupby('customer_id').agg({
+        'total_price': ['sum', 'mean', 'count'],
+        'order_date': ['min', 'max']
+    }).reset_index()
+    customer_metrics.to_csv(project_root / 'data' / 'python_results' / 'customer_metrics.csv')
+
+def analyze_time_series(df, project_root):
+    """Analyze and visualize time series patterns"""
+    print("Analyzing time series patterns...")
+    
+    # Convert order_date to datetime if not already
+    df['order_date'] = pd.to_datetime(df['order_date'])
+    
+    # Monthly sales trends
+    monthly_sales = df.groupby(df['order_date'].dt.to_period('M')).agg({
+        'total_price': ['sum', 'mean', 'count'],
+        'customer_id': 'nunique'
+    }).reset_index()
+    
+    # Plot trends
+    plt.figure(figsize=(15, 6))
+    plt.plot(monthly_sales.index, monthly_sales[('total_price', 'sum')], marker='o')
+    plt.title('Monthly Sales Trend')
+    plt.xlabel('Month')
+    plt.ylabel('Total Sales')
+    plt.xticks(rotation=45)
+    save_plot(plt, 'monthly_sales_trend.png', project_root)
+    
+    # Save time series analysis
+    monthly_sales.to_csv(project_root / 'data' / 'python_results' / 'monthly_sales_analysis.csv')
+
+def generate_statistical_report(df, project_root):
+    """Generate comprehensive statistical report"""
+    print("Generating statistical report...")
+    
+    # Basic statistics
+    basic_stats = df.describe()
+    
+    # Correlation matrix
+    correlation_matrix = df.select_dtypes(include=[np.number]).corr()
+    
+    # Customer segments
+    customer_segments = df.groupby('customer_id').agg({
+        'total_price': ['sum', 'mean', 'count'],
+        'order_date': ['min', 'max']
+    })
+    
+    # Save reports
+    basic_stats.to_csv(project_root / 'data' / 'python_results' / 'basic_statistics.csv')
+    correlation_matrix.to_csv(project_root / 'data' / 'python_results' / 'correlation_matrix.csv')
+    customer_segments.to_csv(project_root / 'data' / 'python_results' / 'customer_segments.csv')
 
 def main():
-    # Get the absolute path to the project root
-    project_root = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    """Main analysis function"""
+    print("Starting enhanced analysis...")
     
-    # Set up paths
-    data_path = project_root / 'data' / 'cleaned_data.csv'
-    output_dir = project_root / 'data' / 'python_results'
-    output_dir.mkdir(parents=True, exist_ok=True)
+    # Load data
+    df = load_data()
+    project_root = create_output_dirs()
     
-    # Set style for visualizations
-    sns.set_theme(style="whitegrid")
+    # Perform analyses
+    analyze_sales_patterns(df, project_root)
+    analyze_category_performance(df, project_root)
+    analyze_customer_behavior(df, project_root)
+    analyze_time_series(df, project_root)
+    generate_statistical_report(df, project_root)
     
-    # Load the dataset
-    df = load_data(data_path)
-    
-    print("\nGenerating visualizations...")
-    
-    # Perform all analyses
-    analyze_sales_by_region(df, output_dir)
-    print("✓ Sales by region analysis complete")
-    
-    analyze_category_revenue(df, output_dir)
-    print("✓ Category revenue analysis complete")
-    
-    analyze_customer_age(df, output_dir)
-    print("✓ Customer age analysis complete")
-    
-    analyze_gender_category(df, output_dir)
-    print("✓ Gender category analysis complete")
-    
-    analyze_shipping_status(df, output_dir)
-    print("✓ Shipping status analysis complete")
-    
-    analyze_shipping_trends(df, output_dir)
-    print("✓ Shipping trends analysis complete")
-    
-    print("\nAnalysis complete! Check the data/python_results directory for visualizations.")
+    print("\nAnalysis complete! Check the data/python_results directory for outputs.")
 
 if __name__ == "__main__":
     main() 

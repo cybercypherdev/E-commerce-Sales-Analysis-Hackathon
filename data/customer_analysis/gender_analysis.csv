@@ -1,0 +1,5 @@
+,Total Orders,Total Orders,Total Spent,Total Spent,Average Order Value
+,count,mean,mean,sum,mean
+Gender,,,,,
+Female,154,1.0,1251.23,192690.0,1251.23
+Male,138,1.0,1274.06,175820.0,1274.06

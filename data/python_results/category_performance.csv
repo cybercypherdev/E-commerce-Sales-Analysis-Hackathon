@@ -1,0 +1,5 @@
+,category,total_price,total_price,total_price,customer_id,market_share
+,,sum,mean,count,nunique,
+0,Accessories,22610.0,175.27131782945736,129,129,6.135518710482755
+1,Electronics,326900.0,2574.015748031496,127,127,88.70858321348132
+2,Wearables,19000.0,527.7777777777778,36,36,5.155898076035928

@@ -1,0 +1,4 @@
+category,total_orders,total_revenue,average_price,unique_customers,avg_quantity_per_order,revenue_percentage,order_percentage
+Electronics,127,326900.0,2574.015748031496,127,2.88,88.71,6.34
+Accessories,129,22610.0,175.27131782945736,129,3.01,6.14,6.44
+Wearables,36,19000.0,527.7777777777778,36,2.64,5.16,1.8

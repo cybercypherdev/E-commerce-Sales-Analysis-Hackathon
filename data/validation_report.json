@@ -1,0 +1,39 @@
+{
+    "total_records": 292,
+    "missing_values_after": {
+        "customer_id": 0,
+        "gender": 0,
+        "region": 0,
+        "age": 0,
+        "product_name": 0,
+        "category": 0,
+        "unit_price": 0,
+        "quantity": 0,
+        "total_price": 0,
+        "shipping_fee": 0,
+        "shipping_status": 0,
+        "order_date": 0,
+        "calculated_total": 0
+    },
+    "unique_categories": [
+        "Electronics",
+        "Accessories",
+        "Wearables"
+    ],
+    "unique_regions": [
+        "North",
+        "West",
+        "South",
+        "East",
+        "Other"
+    ],
+    "date_range": {
+        "start": "2023-01-02",
+        "end": "2024-01-03"
+    },
+    "price_range": {
+        "min": 30.0,
+        "max": 3450.0,
+        "mean": 980.6849315068494
+    }
+}

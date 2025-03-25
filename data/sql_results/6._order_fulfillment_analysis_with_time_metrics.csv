@@ -1,0 +1,4 @@
+shipping_status,total_orders,percentage,unique_customers,average_order_value,total_revenue,avg_shipping_fee
+In Transit,1822,91.01,112,1314.38,147210.0,12.95
+Returned,97,4.85,97,1192.58,115680.0,11.65
+Delivered,83,4.15,83,1272.53,105620.0,11.84

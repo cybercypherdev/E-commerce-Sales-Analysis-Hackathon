@@ -1,0 +1,5 @@
+age_group,total_orders,unique_customers,total_spent,average_order_value,avg_customer_value,highest_order_value,avg_items_per_order,order_percentage
+Over 45,168,168,230640.0,1372.86,1372.86,7500.0,2.88,8.39
+36-45,52,52,68860.0,1324.23,1324.23,7500.0,3.04,2.6
+25-35,46,46,50970.0,1108.04,1108.04,7500.0,2.85,2.3
+Under 25,26,26,18040.0,693.85,693.85,6000.0,2.96,1.3

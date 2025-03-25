@@ -1,0 +1,6 @@
+Region,Number of Orders,Total Revenue,Average Unit Price,Total Units Sold,Unique Customers,Average Order Value,Orders per Customer
+East,69,57700.0,302.88,196.0,69,836.23,1.0
+North,69,97210.0,486.14,202.0,69,1408.84,1.0
+South,69,99420.0,490.87,195.0,69,1440.87,1.0
+West,69,92400.0,454.55,212.0,69,1339.13,1.0
+unknown,16,21780.0,399.65,44.0,16,1361.25,1.0

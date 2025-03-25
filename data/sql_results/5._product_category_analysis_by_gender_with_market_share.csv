@@ -1,0 +1,7 @@
+gender,category,total_orders,unique_customers,total_revenue,average_order_value,avg_quantity_per_order,category_market_share,category_order_share
+Female,Electronics,65,65,173300.0,2666.15,2.98,53.01,51.18
+Female,Accessories,72,72,11590.0,160.97,2.92,51.26,55.81
+Female,Wearables,17,17,7800.0,458.82,2.29,41.05,47.22
+Male,Electronics,62,62,153600.0,2477.42,2.77,46.99,48.82
+Male,Wearables,19,19,11200.0,589.47,2.95,58.95,52.78
+Male,Accessories,57,57,11020.0,193.33,3.12,48.74,44.19

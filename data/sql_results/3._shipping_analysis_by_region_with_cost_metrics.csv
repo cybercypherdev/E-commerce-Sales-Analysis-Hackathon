@@ -1,0 +1,7 @@
+region,total_orders,average_shipping_fee,min_shipping_fee,max_shipping_fee,avg_shipping_percentage,total_shipping_cost,shipping_cost_ratio
+West,69,12.81,5.18,19.98,5.01,883.68,0.96
+East,69,12.08,5.0,19.84,5.98,833.78,1.45
+South,69,12.08,5.07,19.69,6.62,833.45,0.84
+North,69,12.05,5.09,19.98,4.85,831.21,0.86
+unknown,16,11.33,5.29,19.03,10.83,181.26,0.83
+,1710,,,,,,

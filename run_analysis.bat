@@ -5,25 +5,31 @@ echo ===================================
 
 echo.
 echo Step 1: Installing Python dependencies...
-pip install -r requirements.txt
+pip install pandas numpy openpyxl sqlite3 matplotlib seaborn scikit-learn
 
 echo.
-echo Step 2: Creating SQLite database...
+echo Step 2: Running data validation...
+python python/data_validation.py
+
+echo.
+echo Step 3: Running customer frequency analysis...
+python python/customer_frequency_analysis.py
+
+echo.
+echo Step 4: Exporting data to database...
 python python/export_to_db.py
 
 echo.
-echo Step 3: Running SQL analysis...
+echo Step 5: Running SQL analysis...
 python python/run_sql_analysis.py
 
 echo.
-echo Step 4: Running Python analysis...
+echo Step 6: Running Python analysis...
 python python/analysis.py
 
 echo.
-echo Step 5: Preparing Power BI data...
-mkdir powerbi\data 2>nul
-copy data\sql_results\*.csv powerbi\data\ /Y
-copy data\python_results\*.png powerbi\images\ /Y
+echo Step 7: Preparing data for Power BI...
+python python/prepare_powerbi_data.py
 
 echo.
 echo ===================================
