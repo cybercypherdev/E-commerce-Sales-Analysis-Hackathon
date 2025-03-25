@@ -10,6 +10,7 @@ This project analyzes an E-commerce Sales and Customer Insights Dataset to uncov
 
 #### 1. Removing Duplicates
 Duplicate records were eliminated to ensure data accuracy using the following process:
+![Screenshot 2025-03-20 221617](https://github.com/user-attachments/assets/295e464f-c4f6-4799-96ed-63ed508908cc)
 
 **Steps Taken:**
 1. Selected the entire dataset (Ctrl + A)
@@ -17,6 +18,7 @@ Duplicate records were eliminated to ensure data accuracy using the following pr
 3. Selected all columns for duplicate checking
 4. Verified results using Conditional Formatting → Highlight Duplicates
 5. Documented the number of duplicates removed
+![Screenshot 2025-03-20 221918](https://github.com/user-attachments/assets/712e190f-d03f-4887-90c7-3ca570977220)
 
 #### 2. Handling Missing Data
 
@@ -59,6 +61,7 @@ Standardized all dates to YYYY-MM-DD format for consistency:
   * Age: Used median (47)
   * Shipping Status: Used mode ("In Transit")
 - Verified data integrity after cleaning
+- Then final cleaned data was then saved as cleaned_data.csv
 
 ### Database Setup
 - Created SQLite database for efficient querying
@@ -157,28 +160,6 @@ Standardized all dates to YYYY-MM-DD format for consistency:
    - High percentage of in-transit orders
    - Room for improvement in delivery times
 
-### Recommendations
-1. **Sales Strategy**
-   - Implement targeted marketing in West region
-   - Develop special promotions for under-performing categories
-
-2. **Customer Engagement**
-   - Create targeted campaigns for younger customers
-   - Develop loyalty programs for high-value age groups
-
-3. **Operations**
-   - Review shipping processes to reduce transit times
-   - Investigate causes of returns to reduce return rate
-
-4. **Product Development**
-   - Focus on expanding electronics category
-   - Consider new products in wearables category
-
-## Next Steps
-1. Complete Power BI dashboard implementation
-2. Conduct deeper analysis of return patterns
-3. Develop detailed customer segmentation
-4. Create automated reporting system
 
 ## Project Structure
 ```
@@ -273,16 +254,29 @@ E-commerce-Sales-Analysis-Hackathon/
 1. Clone this repository
 2. Install required Python packages: `pip install -r requirements.txt`
 3. Run the analysis pipeline:
-   ```bash
+```bash
 run_analysis.bat
-   ```
+```
 4. Open the Power BI dashboard for interactive exploration
+```
+\powerbi\Power_BI_Dashboard.pbix
+```
+   # Screen Shots from the Power BI dashBoard
 
-## Contributing
-This project is part of the Data Analysis Hackathon 2025 at the University of Eastern Africa, Baraton Department of Information Systems and Computing.
+  ##Executive Overview
+![Screenshot 2025-03-25 230111](https://github.com/user-attachments/assets/8fc55405-99f7-40c9-97cf-f7e14718bd0e)
 
-## License
-=======
+   ##Product Analysis Overview
+![Screenshot 2025-03-25 230201](https://github.com/user-attachments/assets/8a1ecb1f-d482-4537-a27b-79a1eeec315b)
+
+   ##Customer Insights Overview
+![Screenshot 2025-03-25 230048](https://github.com/user-attachments/assets/d4be81b3-c07a-40ef-aaf9-30d23d78c14a)
+
+   ##Operation Metrics Overview
+![Screenshot 2025-03-25 230226](https://github.com/user-attachments/assets/ef2a2af2-9264-456a-9999-db059348310f)
+
+
+
 # E-commerce Sales Analysis Hackathon
 
 
