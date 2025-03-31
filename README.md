@@ -1,5 +1,5 @@
 # E-commerce Sales Analysis Hackathon
-by Ephraim Maina and Jacob Sihul
+by Ephraim Maina 
 
 ## Introduction
 This project analyzes an E-commerce Sales and Customer Insights Dataset to uncover trends, answer key business questions, and create actionable insights. The analysis uses a combination of SQL, Python, and Power BI to provide comprehensive insights into sales patterns, customer behavior, and order fulfillment metrics.
