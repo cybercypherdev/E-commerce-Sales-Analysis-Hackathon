@@ -1,4 +1,4 @@
-# E-commerce Sales Analysis Hackathon
+# E-commerce Sales Analysis 
 by Ephraim Maina 
 
 ## Introduction
@@ -277,7 +277,5 @@ run_analysis.bat
 
 
 
-# E-commerce Sales Analysis Hackathon
 
 
-This project is part of the Data Analysis Hackathon 2025. 
